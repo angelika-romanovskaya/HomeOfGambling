@@ -458,10 +458,16 @@ body{
         font-size: 1.8em;
     }
 
+    .scroll{
+        border-radius: 50px;
+        height: 420px;
+        padding-right: 6px;
+    }
+
     
     .blog{
-        padding: 10px 16px 10px 10px;
-        border-radius: 50px;
+        padding: 10px 10px 10px 10px;
+        
         max-height: 420px;
     }
 
