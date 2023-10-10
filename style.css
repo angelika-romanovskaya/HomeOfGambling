@@ -6,10 +6,15 @@
 }
 
 body{
-    background: #110A1D;
+    position: relative;
+    background: rgb(17, 10, 29);
     font-size: 10px;
     line-height: 10px;
     box-sizing: border-box;
+}
+
+body>div{
+    overflow: hidden;
 }
 .container{
     max-width: 1640px;
@@ -85,6 +90,29 @@ body{
 .home {
     padding: 142px 140px 220px;
     position: relative;
+    background: linear-gradient(180deg, transparent 63.64%, rgba(17, 10, 29,1) 95.45%);
+}
+.bg-1{
+    position: absolute;
+    left: -140px;
+    top: -500px;
+    background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.40) 100%);
+    opacity: 0.55;
+    filter: blur(150px);
+    width: 224px;
+    height: 1300px;
+    transform: rotate(-54deg);
+}
+.bg-2{
+    position: absolute;
+    width: 574px;
+    height: 574px;
+    border-radius: 574px;
+    opacity: 0.7;
+    background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
+    filter: blur(325px);
+    right: -160px;
+    bottom: 0px;
 }
 .wrap {
     display: flex;
@@ -108,19 +136,22 @@ body{
     display: flex;
     flex-direction: column;
     height: 250%;
-    gap: 23px
+    gap: 23px;
 }
 
 .wrap_line:first-child{
     animation: column-bottom 3s linear infinite;
+    opacity: 0.4;
 }
 
 .wrap_line:nth-child(2){
     animation: column-top 10s linear infinite;
+    opacity: 0.7;
 }
 
 .wrap_line:last-child{
     animation: column-bottom 5s linear infinite;
+    opacity: 0.5;
 }
 
 .wrap_part{
@@ -182,6 +213,7 @@ body{
 }
 .home_main {
     max-width: 600px;
+    position: relative;
 }
 .home_title {
     color: #478BF9;
@@ -653,6 +685,27 @@ body{
     }
     .social_list{
         flex-wrap: wrap;
+    }
+
+    .bg-1{
+        width: 81.081px;
+        height: 466.334px;
+        transform: rotate(-54.311deg);
+        background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.40) 100%);
+        opacity: 0.55;
+        filter: blur(40px);
+        top:-50%;
+        z-index: -100;
+        left: 50%;
+    }
+    .bg-2{
+        width: 240px;
+        height: 240px;
+        background-color: var(--main-blue-hover, linear-gradient(256deg, #478BF9 0%, #9DADF2 100%));
+        opacity: 0.7;
+        filter: blur(136px);
+        right: -100px;
+        bottom: -50px;
     }
 }
 

@@ -13,13 +13,13 @@ window.addEventListener('resize', function(){
         column1.forEach((item) => item.setAttribute('src', './icon/Drow.svg'))
         column2.forEach((item) => item.setAttribute('src', './icon/Worldrow.svg'))
         column3.forEach((item) => item.innerHTML = `<img src="./icon/row.svg" alt="row">
-                                                    <img src="./icon/Crown.svg" alt="Crown">`)
+                                                    <img src="./icon/Crown.svg" alt="Crown">`);
      }
      else {
         column1.forEach((item) => item.setAttribute('src', './icon/D.svg'))
         column2.forEach((item) => item.setAttribute('src', './icon/World.svg'))
         column3.forEach((item) => item.innerHTML = `<img src="./icon/column.svg" alt="column">
-                                                    <img src="./icon/Crown.svg" alt="Crown">`)
+                                                    <img src="./icon/Crown.svg" alt="Crown">`);
     }
 })
 
